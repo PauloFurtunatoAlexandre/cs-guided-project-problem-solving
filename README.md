@@ -10,3 +10,10 @@ Please fork and clone this repo to your computer by the start of class.
 - Plan
 - Execute
 - Reflect
+
+effectively ask for help by giving the expected vs. experienced behavior, explaining what specific actions they've taken so far, and providing all relevant information and code:
+
+## Effectively Ask for Help
+- giving the expected vs. experienced behavior
+- explaining what specific action they've taken so far
+- providing all relevant information and code

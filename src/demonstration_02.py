@@ -20,7 +20,7 @@ Notes:
 
 def add_indexes(numbers):
     # Your code here
-    index_values = []
+    # index_values = []
     new_numbers = []
     # for i in range(len(numbers)):
     #     index_values.append(i)

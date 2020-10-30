@@ -21,14 +21,13 @@ Notes:
 def multiply_nums(nums):
     new_values = []
     product = 1
-    
+
     new_values = list(map(int, nums.split(", ")))
-    
+
     for i in new_values:
         product = product * i
-    
+
     return product
-    
 
 
 print(multiply_nums("2, 3"))  # ➞ 6
