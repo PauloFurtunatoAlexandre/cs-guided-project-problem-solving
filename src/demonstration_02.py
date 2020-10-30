@@ -22,10 +22,13 @@ def add_indexes(numbers):
     # Your code here
     index_values = []
     new_numbers = []
-    for i in range(len(numbers)):
-        index_values.append(i)
-    for i in range(0, len(numbers)):
-        new_numbers.append(numbers[i] + index_values[i])
+    # for i in range(len(numbers)):
+    #     index_values.append(i)
+    # for i in range(0, len(numbers)):
+    #     new_numbers.append(numbers[i] + index_values[i])
+    
+    for el in enumerate(numbers):
+        new_numbers.append(el[0] + el[1])
     return new_numbers
     
 
