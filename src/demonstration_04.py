@@ -7,22 +7,50 @@ corresponding emoticons.
 
 word -> emoticon
 ---
-smile -> :D
-grin -> :)
+smile -> :)
+grin -> :D
 sad -> :(
 mad	-> :P
 
 Examples:
-- emotify("Make me smile") ➞ "Make me :D"
-- emotify("Make me grin") ➞ "Make me :)"
+- emotify("Make me smile") ➞ "Make me :)"
+- emotify("Make me grin") ➞ "Make me :D"
 - emotify("Make me sad") ➞ "Make me :("
 
 Notes:
 - The sentence always starts with "Make me".
 - Try to solve this without using conditional statements like if/else.
+
+
+-we might want to use a dictionary to store the key value pairs
+{
+    "smile": ":)"
+    "grin": ":D"
+    "sad": ":("
+    "mad": ":P"
+}
+
+# iterate over the hash tables items extrapolating the key and value of each item
+# use a string ".replace" to replace the substring of the key with the value
+
 """
 
 
 def emotify(txt):
     # Your code here
+    data = {
+        "smile": ":)",
+        "grin": ":D",
+        "sad": ":(",
+        "mad": ":P"
+    }
 
+    for k, v in data.items():
+        txt = txt.replace(k, v)
+    
+    return txt
+
+print(emotify("Make me smile"))  # "Make me :)"
+print(emotify("Make me grin"))  # "Make me :D"
+print(emotify("Make me sad"))  # "Make me :("
+print(emotify("Make me mad"))
