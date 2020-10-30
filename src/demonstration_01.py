@@ -52,7 +52,7 @@ def last(a, n):
     elif n == 0:
         return []
     else:
-        return a[len(a) - n: len(a) + 1]
+        return a[len(a) - n: len(a)]
         # return a[-n:]
 
 
