@@ -37,7 +37,21 @@ Notes:
 
 
 def emotify(txt):
-    # Your code here
+    # Your code here O(n)
+    # first pass
+    # data = {
+    #     "smile": ":)",
+    #     "grin": ":D",
+    #     "sad": ":(",
+    #     "mad": ":P"
+    # }
+
+    # for k, v in data.items():
+    #     txt = txt.replace(k, v)
+
+    # return txt
+
+    # second pass O(1)
     data = {
         "smile": ":)",
         "grin": ":D",
@@ -45,12 +59,16 @@ def emotify(txt):
         "mad": ":P"
     }
 
-    for k, v in data.items():
-        txt = txt.replace(k, v)
+    start_of_string = txt[:8]
     
-    return txt
+    end_of_string = txt[8:]
+    
+    full_string = start_of_string + data[end_of_string]
+    
+    return full_string
+
 
 print(emotify("Make me smile"))  # "Make me :)"
 print(emotify("Make me grin"))  # "Make me :D"
 print(emotify("Make me sad"))  # "Make me :("
-print(emotify("Make me mad"))
+print(emotify("Make me mad"))  # "Make me :P"
